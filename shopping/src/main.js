@@ -3,6 +3,10 @@
 import Vue from 'vue'
 import App from './App'
 import router from './router'
+import './components/css/HeaderFooter.css'
+import './components/css/page.css'
+// import './components/img'
+// import './components/js'
 import '../node_modules/bootstrap/dist/css/bootstrap.min.css';
 import '../node_modules/bootstrap/dist/js/bootstrap.min.js';
 import $ from 'jquery'
