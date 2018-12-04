@@ -3,16 +3,17 @@
 import Vue from 'vue'
 import App from './App'
 import router from './router'
-import './components/css/HeaderFooter.css'
-import './components/css/page.css'
-// import './components/img'
-// import './components/js'
+import VueLazyLoad from 'vue-lazyload'
 import '../node_modules/bootstrap/dist/css/bootstrap.min.css';
 import '../node_modules/bootstrap/dist/js/bootstrap.min.js';
 import $ from 'jquery'
 
 Vue.config.productionTip = false
 
+Vue.use(VueLazyLoad,{
+  error:'./components/img/page/logo/Shoppinglogo.png',   //这是图片加载不了时候显示
+  loading:'./components/img/page/logo/wait1.jpg'// 这是待加载时候显示
+})
 /* eslint-disable no-new */
 new Vue({
   el: '#app',
