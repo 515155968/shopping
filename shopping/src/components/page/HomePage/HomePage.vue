@@ -1,6 +1,6 @@
 <template>
     <div class="content">
-        <div class="big_content">
+        <div class="big_content_top">
             <div class="content_nav">
                 <div class="content_nav_left"><img src="../../img/page/logo/Shoppinglogo.png" alt=""></div>
                 <div class="content_nav_middle">
@@ -95,38 +95,43 @@
             <div class="advertisement" v-for="item in advertisement1">
                 <img v-lazy="item.advertisement" alt=""  data-src="../../img/page/logo/Shoppinglogo.png">
             </div>
+        </div>
+        <div class="big_content_bottom">
+          <div class="small_content">
             <div class="HotSellingActivities">
-                <p>热销活动</p>
-                <div class="HotSell">
-                    <a href="javascript:;">查看全部</a><i>></i>
-                </div>
-                <div class="HotSellingActivities_img">
-                    <div class="HotSellingActivities_banner"><img src="../../img/page/banner/banner1.png" alt=""></div>
-                    <ul>
-                        <li v-for="item in HotSell">
-                            <img v-lazy="item.HotSellImg" alt=""  data-src="../../img/page/logo/Shoppinglogo.png">
-                        </li>
-                    </ul>
-                </div>
+              <p>热销活动</p>
+              <div class="HotSell">
+                <a href="javascript:;">查看全部</a><i>></i>
+              </div>
+              <div class="HotSellingActivities_img">
+                <div class="HotSellingActivities_banner"><img src="../../img/page/banner/banner1.png" alt=""></div>
+                <ul>
+                  <li v-for="item in HotSell">
+                    <img v-lazy="item.HotSellImg" alt=""  data-src="../../img/page/logo/Shoppinglogo.png">
+                  </li>
+                </ul>
+              </div>
             </div>
             <div class="advertisement" v-for="item in advertisement2">
-                <img v-lazy="item.advertisement" alt=""  data-src="../../img/page/logo/Shoppinglogo.png">
+              <img v-lazy="item.advertisement" alt=""  data-src="../../img/page/logo/Shoppinglogo.png">
             </div>
             <div class="Boutique">
-                <p>精品推荐</p>
-                <ul>
-                    <li v-for="item in Boutique">
-                        <img v-lazy="item.BoutiqueImg" alt=""  data-src="../../img/page/logo/Shoppinglogo.png">
-                    </li>
-                    <li class="last_Boutique">
-                        <img src="../../img/page/banner/banner1.png" alt=""  data-src="../../img/page/logo/Shoppinglogo.png" class="last_Boutique_top">
-                        <div class="last_Boutique_bottom">
-                          <a href="javascript:;">浏览更多</a>
-                          <i><img src="../../img/page/icon/arrow.png" alt="" class="arrow"></i>
-                        </div>
-                    </li>
-                </ul>
+              <p>精品推荐</p>
+              <ul>
+                <li v-for="item in Boutique">
+                  <img v-lazy="item.BoutiqueImg" alt=""  data-src="../../img/page/logo/Shoppinglogo.png">
+                </li>
+                <li class="last_Boutique">
+                  <img src="../../img/page/banner/banner1.png" alt=""  data-src="../../img/page/logo/Shoppinglogo.png" class="last_Boutique_top">
+                  <div class="last_Boutique_bottom">
+                    <a href="javascript:;">浏览更多</a>
+                    <i><img src="../../img/page/icon/arrow.png" alt="" class="arrow"></i>
+                  </div>
+                </li>
+              </ul>
             </div>
+          </div>
+
         </div>
     </div>
 </template>

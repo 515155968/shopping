@@ -78,9 +78,11 @@
 
 <script>
   import IndexContent from "../page/HomePage/HomePage.vue"
+  // import swiper from "../page/HomePage/swipers.vue"
       export default {
           name: "HeaderFooter",
           components:{
+            // swiper,
             IndexContent
           }
       }
